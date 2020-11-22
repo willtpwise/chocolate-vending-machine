@@ -1,0 +1,53 @@
+.button {
+  font: inherit;
+  background: #fff;
+  color: #2c2c2c;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  padding: 16px 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #f2f2f2;
+}
+
+.button[disabled] {
+  opacity: 0.8;
+  background: #f2f2f2;
+  cursor: not-allowed;
+}
+
+.title {
+  display: block;
+  font-weight: bold;
+}
+
+.subTitle {
+  font-size: 0.8em;
+}
+
+.buttonGroup,
+.buttonGroup li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.buttonGroup li {
+  margin: 4px;
+  flex: 1;
+}
+
+.buttonGroup.isBlock li,
+.buttonGroup.isBlock .button {
+  width: 100%;
+  flex: auto;
+}

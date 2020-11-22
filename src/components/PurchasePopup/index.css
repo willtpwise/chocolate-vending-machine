@@ -1,0 +1,22 @@
+.purchasePopup {
+  --yOffset: 15px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translate(-50%, var(--yOffset));
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  width: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+
+.purchasePopup.isVisible {
+  opacity: 1;
+  --yOffset: 0;
+}
+
+.purchasePopup img {
+  width: 100%;
+}
